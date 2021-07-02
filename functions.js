@@ -5,8 +5,10 @@
   The function should return the sum of the two parameters.
 */
 
-//CODE HERE
-
+function sum(num1,num2){
+  return (num1 + num2)
+}
+sum(6,9)
 
 //////////////////PROBLEM 2////////////////////
 /*
@@ -16,8 +18,15 @@
   If it's not, return a false boolean.
 */
 
-//CODE HERE
-
+function greaterThanFive(number){
+  if(number > 5){
+    return true
+  } else{
+    return false
+  }
+}
+greaterThanFive(8)
+greaterThanFive(1)
 //////////////////PROBLEM 3////////////////////
 /*
   Create a function called 'findZWords' that takes in one parameter, 'word'. 
@@ -26,7 +35,14 @@
   If the name does not begin with Z, return the string: 'the name does not begin with Z'.
 */
 
-//CODE HERE
+
+function findZWords(word){
+  if(word.charAt(0) = `Z`) { 
+    return (`the name begins with Z`)
+  } else{
+    return (`the name does not begin with Z`)
+  }
+}
 
 //////////////////PROBLEM 4////////////////////
 /*
@@ -35,4 +51,7 @@
   "NAMEPARAM loves LOVEPARAM" with the appropriate parameters in the string. e.g. "Joseph loves music"
 */
 
-//CODE HERE
+function iLove(name,love){
+  return (`${name} loves ${love}`)
+}
+iLove(`Moira`, `coding.`)
