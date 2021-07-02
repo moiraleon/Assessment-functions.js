@@ -37,12 +37,21 @@ greaterThanFive(1)
 
 
 function findZWords(word){
-  if(word.charAt(0) = `Z`) { 
+  if(word.charAt(0) === `Z`) { 
     return (`the name begins with Z`)
   } else{
     return (`the name does not begin with Z`)
   }
 }
+//CLASS REVISIONS
+function findZWords(word){
+  if(word.charAt(0).toLowerCase === `Z`) { 
+    return `the name begins with Z`
+  } else{
+    return `the name does not begin with Z`
+  }
+}
+findZWords('zebra')
 
 //////////////////PROBLEM 4////////////////////
 /*
